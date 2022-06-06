@@ -13,7 +13,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
  * and exclude "mockito-core" from "spring-boot-starter-test".
  */
 @ExtendWith(MockitoExtension.class)
-public class how_to_mock_static_methods {
+public class mock_static_methods {
     Testee testee = new Testee();
 
     @Test

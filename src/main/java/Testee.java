@@ -26,4 +26,14 @@ public class Testee {
     private int privateMethodAddOne(int i) {
         return i + 1;
     }
+
+    public int callingDependenceToAddAll(int first, Integer... others) {
+        return dependence.addAll(first, others);
+    }
+
+    public int callingDependenceToAddAll(int first, String differentType) {
+        // this method shows that overloading in library
+        // will affect the writing style of org.mockito.ArgumentMatchers.* in our unit tests.
+        return 999;
+    }
 }

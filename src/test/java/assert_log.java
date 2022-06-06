@@ -21,9 +21,11 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItems;
 import static org.mockito.Mockito.clearInvocations;
+import static org.mockito.Mockito.verify;
+import static org.mockito.internal.verification.VerificationModeFactory.atLeastOnce;
 
 @ExtendWith(MockitoExtension.class)
-public class hot_to_assert_log {
+public class assert_log {
     /**
      * Change to your logging library's appender.
      * Here is logback library.

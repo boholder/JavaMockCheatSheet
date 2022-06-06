@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.is;
  * when you just don't want your testee's config fields remaining null while testing?
  */
 @ExtendWith(MockitoExtension.class)
-public class how_to_set_config_field_without_using_spring_boot_test {
+public class set_config_field_without_using_spring_boot_test {
     @InjectMocks
     Testee testee;
 

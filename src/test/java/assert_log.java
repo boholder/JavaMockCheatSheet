@@ -56,7 +56,7 @@ public class assert_log {
                 .map(ILoggingEvent::getFormattedMessage)
                 .collect(Collectors.toList());
         assertThat(capturedLog, hasItems(
-                Stream.of("log-one", "log-another")
+                Stream.of("one", "another")
                         .map(Matchers::containsString)
                         .toArray(Matcher[]::new)
         ));
